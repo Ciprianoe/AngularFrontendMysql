@@ -1,0 +1,15 @@
+.agregarEmpleado{
+    text-align: center;
+}
+
+.spinner-border{
+    float: right;
+}
+
+/* para centrar todo el elemento en el centro desde el contenedor  */
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

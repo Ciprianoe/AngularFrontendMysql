@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "crudempleados-ad870": {
+      "hosting": {
+        "empleados": [
+          "crudempleados-ad870"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "crudempleados-ad870"
+  }
+}

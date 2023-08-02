@@ -1,0 +1,43 @@
+<div class="container pt-4">
+    <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="agregarEmpleado">{{titulo}} 
+                        <div *ngIf="loading" class="spinner-border text-dark" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                        </h3>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                        <span *ngIf="submit && createEmpleado.invalid" class="badge text-bg-warning">TODOS LOS CAMPOS SON OBLIGATORIOS</span>
+                    </div>                    
+                    <form class="formulario mt-4" [formGroup]="createEmpleado" (ngSubmit)="agregarEditarEmpleado()">
+                        <div class="row">
+                            <div class="col">
+                                <input type="text" class="form-control form-control-lg" 
+                                placeholder="Nombre"  formControlName="nombre">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control form-control-lg" 
+                                placeholder="Apellido" formControlName="apellido">
+                            </div>
+                        </div> 
+                        <input type="number" class="form-control form-control-lg mt-3" 
+                        placeholder="Documento de Identidad" 
+                        formControlName="dni" >
+                        <input type="text" class="form-control form-control-lg mt-3" 
+                        placeholder="Cargo Asignado" 
+                        formControlName="cargo" >
+                        <input type="number" class="form-control form-control-lg mt-3"
+                         placeholder="Salario" 
+                         formControlName="salario">
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                            <button type="text" class="btn btn-outline-danger mt-2" routerLink="/list-empleados">Volver</button>
+                            <button (click)="actualizarEmpleado()" type="submit" class="btn btn-outline-success mt-2">Agregar</button>
+                        </div> 
+                    </form>                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

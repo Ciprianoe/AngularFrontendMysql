@@ -1,0 +1,37 @@
+.fa-edit{
+    color: rgb(0,255, 255);
+    margin-right: 10px;
+}
+
+.fa-trash-can{
+    color: rgb(220,53,69);
+}
+
+.fa-edit:hover{
+    color: rgb(37,250,3);
+    /* transform: translateY(-3px); */
+    /* transform: scale(1.1) rotate(3deg) translateX(5px);  */
+  transform: scale(1.2);
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.fa-trash-can:hover{
+    color: rgb(37,250,3);
+    transform: scale(1.2);
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+/* para posicionar todo el elemento en el centro de la pagina  */
+/* .listaEmpleados{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+} */
+
+/* .card-body-users{
+    overflow: scroll;
+    height: 750px;
+} */
